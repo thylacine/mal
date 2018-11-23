@@ -78,7 +78,7 @@ DOCKERIZE =
 # Implementation specific settings
 #
 
-IMPLS = ada awk bash basic c chuck clojure coffee common-lisp cpp crystal cs d dart \
+IMPLS = ada awk bash basic c c_thylacine chuck clojure coffee common-lisp cpp crystal cs d dart \
 	elisp elixir elm erlang es6 factor fantom forth fsharp go groovy gnu-smalltalk \
 	guile haskell haxe hy io java js julia kotlin livescript logo lua make mal \
 	matlab miniMAL nasm nim objc objpascal ocaml perl perl6 php picolisp plpgsql \
@@ -174,6 +174,7 @@ awk_STEP_TO_PROG =     awk/$($(1)).awk
 bash_STEP_TO_PROG =    bash/$($(1)).sh
 basic_STEP_TO_PROG =   $(basic_STEP_TO_PROG_$(basic_MODE))
 c_STEP_TO_PROG =       c/$($(1))
+c_thuza_STEP_TO_PROG = c_thuza/$($(1))
 chuck_STEP_TO_PROG =   chuck/$($(1)).ck
 clojure_STEP_TO_PROG = $(clojure_STEP_TO_PROG_$(clojure_MODE))
 coffee_STEP_TO_PROG =  coffee/$($(1)).coffee
